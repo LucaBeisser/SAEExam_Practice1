@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6284879511633602593}
   - component: {fileID: 6287746626874895869}
   - component: {fileID: 6297811739860522531}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EA03_Environment_Rock_Head_01a_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6280003397527187441}
   - component: {fileID: 6191659498161519393}
-  m_Layer: 0
+  - component: {fileID: 3488685811853240456}
+  - component: {fileID: 4756981096477145760}
+  m_Layer: 6
   m_Name: Rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,6 +144,32 @@ LODGroup:
     renderers:
     - renderer: {fileID: 6297514520397248709}
   m_Enabled: 1
+--- !u!114 &3488685811853240456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6283267995979270521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cd5fdba3b063241b1a90fa8affd92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollectableItem: {fileID: 11400000, guid: ab0bb3aca6132b443904254a96faf2ea, type: 2}
+--- !u!135 &4756981096477145760
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6283267995979270521}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.3
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6283413023198472661
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,7 +181,7 @@ GameObject:
   - component: {fileID: 6285103169033704483}
   - component: {fileID: 6287600273200312913}
   - component: {fileID: 6296844733863863287}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EA03_Environment_Rock_Head_01a_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,7 +262,7 @@ GameObject:
   - component: {fileID: 6279935254839122909}
   - component: {fileID: 6287660252663190027}
   - component: {fileID: 6297514520397248709}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EA03_Environment_Rock_Head_01a_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

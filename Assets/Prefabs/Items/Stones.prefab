@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7947369544135833799}
   - component: {fileID: 7939038515589028519}
   - component: {fileID: 7930624301406240477}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EA03_Environment_Road_Cobble_01b_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,8 +92,7 @@ GameObject:
   - component: {fileID: 7947321127338650175}
   - component: {fileID: 7939207998901836143}
   - component: {fileID: 7930832755953882489}
-  - component: {fileID: 4676813406213935125}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EA03_Environment_Road_Cobble_01b_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,19 +162,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4676813406213935125
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7952764026718335111}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.8012657, y: 1.6663876, z: 0.5794727}
-  m_Center: {x: 0.043644905, y: -0.116864204, z: -0.07897356}
 --- !u!1 &7953123862027755777
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,7 +173,7 @@ GameObject:
   - component: {fileID: 7947398547704583929}
   - component: {fileID: 7936373795853187431}
   - component: {fileID: 7930689245814563953}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EA03_Environment_Road_Cobble_01b_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -267,7 +253,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7947452543199707023}
   - component: {fileID: 7818798446657351987}
-  m_Layer: 0
+  - component: {fileID: 244679498802653515}
+  - component: {fileID: 1897498256}
+  m_Layer: 6
   m_Name: Stones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -318,3 +306,29 @@ LODGroup:
     renderers:
     - renderer: {fileID: 7930832755953882489}
   m_Enabled: 1
+--- !u!114 &244679498802653515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7953228243668303489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cd5fdba3b063241b1a90fa8affd92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollectableItem: {fileID: 11400000, guid: b1b59cd96f57eb947b6228a9afe8c129, type: 2}
+--- !u!65 &1897498256
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7953228243668303489}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.56, y: 0.71, z: 1.93}
+  m_Center: {x: 0, y: 0, z: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4881242354172120239}
   - component: {fileID: 4889539341860795219}
   - component: {fileID: 4897849488856858971}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EA03_Items_House_Apple_01c_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,8 +91,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4873707957689438299}
   - component: {fileID: 4716661374448005529}
-  m_Layer: 0
-  m_Name: Apple
+  - component: {fileID: 7083989857060508969}
+  - component: {fileID: 628988903771709}
+  m_Layer: 6
+  m_Name: Goo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -142,6 +144,32 @@ LODGroup:
     renderers:
     - renderer: {fileID: 4899715651751335511}
   m_Enabled: 1
+--- !u!114 &7083989857060508969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4875583741345337033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cd5fdba3b063241b1a90fa8affd92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollectableItem: {fileID: 11400000, guid: b1f9d39452cfa20478be6c7a2f56ff4a, type: 2}
+--- !u!135 &628988903771709
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4875583741345337033}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4875695699524173757
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,7 +181,7 @@ GameObject:
   - component: {fileID: 4873949728286339725}
   - component: {fileID: 4889142354654799865}
   - component: {fileID: 4899471463564830909}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EA03_Items_House_Apple_01c_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,7 +262,7 @@ GameObject:
   - component: {fileID: 4873663300156735931}
   - component: {fileID: 4889230901929239529}
   - component: {fileID: 4899715651751335511}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EA03_Items_House_Apple_01c_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

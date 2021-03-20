@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4196791421601891560}
   - component: {fileID: 4196791421598467278}
   - component: {fileID: 4196791421599598094}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EA_Items_House_kettle_01a_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,8 +92,7 @@ GameObject:
   - component: {fileID: 4196791421601891562}
   - component: {fileID: 4196791421598467272}
   - component: {fileID: 4196791421599598088}
-  - component: {fileID: 4356333197046406260}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EA_Items_House_kettle_01a_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,20 +162,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4356333197046406260
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4196791421601798346}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 938d24eb3c15ada4f9e3900c8cc3bfa7, type: 3}
 --- !u!1 &4196791421601798348
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,7 +172,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4196791421601891564}
   - component: {fileID: 4196791421614821452}
-  m_Layer: 0
+  - component: {fileID: 569374845092236856}
+  - component: {fileID: 3326965240042624909}
+  m_Layer: 6
   m_Name: Kettle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,6 +225,32 @@ LODGroup:
     renderers:
     - renderer: {fileID: 4196791421599598088}
   m_Enabled: 1
+--- !u!114 &569374845092236856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4196791421601798348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cd5fdba3b063241b1a90fa8affd92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollectableItem: {fileID: 11400000, guid: c64dd0a211c29334aa69eeb6cf37a12b, type: 2}
+--- !u!65 &3326965240042624909
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4196791421601798348}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.3, z: 0.25}
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &4196791421601798350
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,7 +262,7 @@ GameObject:
   - component: {fileID: 4196791421601891566}
   - component: {fileID: 4196791421598467276}
   - component: {fileID: 4196791421599598092}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EA_Items_House_kettle_01a_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

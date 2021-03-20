@@ -44,7 +44,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3154404772574054991}
   m_LocalRotation: {x: 0.21579114, y: -0.062927395, z: 0.013937221, w: 0.97431004}
-  m_LocalPosition: {x: -0.373, y: 1.003, z: -4}
+  m_LocalPosition: {x: -0.373, y: 1.003, z: -3.9999995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3154404774334798103}
@@ -98,6 +98,8 @@ GameObject:
   - component: {fileID: 3154404772813598238}
   - component: {fileID: 3154404772813598237}
   - component: {fileID: 3154404772813598236}
+  - component: {fileID: 204896854649931726}
+  - component: {fileID: 1115314261}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -139,7 +141,8 @@ MonoBehaviour:
   sprintSpeed: 6
   followTransform: {fileID: 3154404773571394032}
   animator: {fileID: 3154404773581837158}
-  rigidbody: {fileID: 3154404772813598236}
+  rb: {fileID: 3154404772813598236}
+  CanInteract: 1
 --- !u!136 &3154404772813598237
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -170,6 +173,46 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &204896854649931726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3154404772813598234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db51d4d87145ba246bfbadb8bd815f97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  collectableMask:
+    serializedVersion: 2
+    m_Bits: 64
+  pickUpText: {fileID: 0}
+--- !u!114 &1115314261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3154404772813598234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e72d3d8d5b0209c499498c947ff031df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryListParent: {fileID: 0}
+  categoryListParent: {fileID: 0}
+  inventoryUIList: {fileID: 0}
+  inventoryUISelected: {fileID: 0}
+  inventoryItemPrefab: {fileID: 4652864860886978727, guid: 9ebcccd24f7a05d42a9e3788938bf582, type: 3}
+  categoryItemPrefab: {fileID: 5952925743730649115, guid: 7c9263928e077014aa93f2252b1138e0, type: 3}
+  nameText: {fileID: 0}
+  descriptionText: {fileID: 0}
+  weightText: {fileID: 0}
+  valueText: {fileID: 0}
+  carryWeightText: {fileID: 0}
 --- !u!1 &3154404773571394031
 GameObject:
   m_ObjectHideFlags: 0

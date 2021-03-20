@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 6514908325885319585}
   - component: {fileID: 6514908325884549507}
   - component: {fileID: 6514908325883419459}
-  - component: {fileID: 3602664416033413027}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EA_Items_House_bowl_metal_01c_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,20 +81,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3602664416033413027
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6514908325885674881}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: bb6405d0387f01a49a96a321a75e3ab9, type: 3}
 --- !u!1 &6514908325885674883
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,7 +92,7 @@ GameObject:
   - component: {fileID: 6514908325885319587}
   - component: {fileID: 6514908325884549509}
   - component: {fileID: 6514908325883419461}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EA_Items_House_bowl_metal_01c_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,7 +173,7 @@ GameObject:
   - component: {fileID: 6514908325885319589}
   - component: {fileID: 6514908325884549511}
   - component: {fileID: 6514908325883419463}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EA_Items_House_bowl_metal_01c_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,7 +253,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8852923094554973954}
   - component: {fileID: 8852923094574285730}
-  m_Layer: 0
+  - component: {fileID: 1196252240903548033}
+  - component: {fileID: 5296070610130402823}
+  m_Layer: 6
   m_Name: Plate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,3 +306,29 @@ LODGroup:
     renderers:
     - renderer: {fileID: 6514908325883419459}
   m_Enabled: 1
+--- !u!114 &1196252240903548033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8852923094554807074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cd5fdba3b063241b1a90fa8affd92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollectableItem: {fileID: 11400000, guid: dcf4a1abcb8563348ab04ab6557577ae, type: 2}
+--- !u!65 &5296070610130402823
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8852923094554807074}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.37, y: 0.1, z: 0.31}
+  m_Center: {x: 0, y: 0.01, z: 0}
